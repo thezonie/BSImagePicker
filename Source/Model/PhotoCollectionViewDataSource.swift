@@ -79,6 +79,7 @@ final class PhotoCollectionViewDataSource : NSObject, UICollectionViewDataSource
         // Request image
         cell.tag = Int(photosManager.requestImage(for: asset, targetSize: imageSize, contentMode: imageContentMode, options: nil) { (result, _) in
             cell.imageView.image = result
+            cell.playButtonOverlayImageView.isHidden = cell.asset?.mediaType != .video
         })
         
         // Set selection number

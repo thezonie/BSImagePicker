@@ -28,6 +28,7 @@ The photo cell.
 */
 final class PhotoCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var playButtonOverlayImageView: UIImageView!
     @IBOutlet weak var selectionOverlayView: UIView!
     @IBOutlet weak var selectionView: SelectionView!
     
